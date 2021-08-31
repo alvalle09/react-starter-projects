@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+import "./styles.css";
 
 class App extends Component {
     constructor(props) {
@@ -27,7 +28,7 @@ class App extends Component {
         return (
             <>
             <h1>Welcome to the App!!</h1>
-            <p>Hi there, {this.state.displayName}</p>
+            <p>Hi there, {this.state.displayName || "we haven't been introduced"}!</p>
             <input value={this.state.name} onChange={this.handleChange} />
             <button onClick={this.handleClick}>Update name</button>
             </>
