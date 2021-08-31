@@ -29,8 +29,7 @@ class App extends Component {
             <>
             <h1>Welcome to the App!!</h1>
             <p>Hi there, {this.state.displayName || "we haven't been introduced"}!</p>
-            <input value={this.state.name} onChange={this.handleChange} />
-            <button onClick={this.handleClick}>Update name</button>
+           
             </>
         );
     }

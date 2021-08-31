@@ -32004,12 +32004,7 @@ var App = /*#__PURE__*/function (_Component) {
   _createClass(App, [{
     key: "render",
     value: function render() {
-      return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("h1", null, "Welcome to the App!!"), /*#__PURE__*/_react.default.createElement("p", null, "Hi there, ", this.state.displayName || "we haven't been introduced", "!"), /*#__PURE__*/_react.default.createElement("input", {
-        value: this.state.name,
-        onChange: this.handleChange
-      }), /*#__PURE__*/_react.default.createElement("button", {
-        onClick: this.handleClick
-      }, "Update name"));
+      return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("h1", null, "Welcome to the App!!"), /*#__PURE__*/_react.default.createElement("p", null, "Hi there, ", this.state.displayName || "we haven't been introduced", "!"));
     }
   }]);
 
