@@ -32090,8 +32090,8 @@ var App = /*#__PURE__*/function (_Component) {
   _createClass(App, [{
     key: "render",
     value: function render() {
-      return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_Title.default, null), /*#__PURE__*/_react.default.createElement(_Greeting.default, {
-        name: this.state.displayName
+      return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_Title.default, {
+        title: "Welcom to the app!"
       }), /*#__PURE__*/_react.default.createElement("p", null, "Enter your name below so we can get acquainted."), /*#__PURE__*/_react.default.createElement(_Input.default, {
         handleClick: this.handleClick
       }));
@@ -32143,7 +32143,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53557" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57103" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
