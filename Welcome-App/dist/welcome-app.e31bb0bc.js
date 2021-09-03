@@ -31890,9 +31890,8 @@ var _react = _interopRequireDefault(require("react"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var _default = function _default(_ref) {
-  var _ref$name = _ref.name,
-      name = _ref$name === void 0 ? 'we have not been intorduced' : _ref$name;
-  return /*#__PURE__*/_react.default.createElement("p", null, "Hi there, ", name, "! ");
+  var name = _ref.name;
+  return /*#__PURE__*/_react.default.createElement("p", null, "Hi there, ", name ? name : 'we have not been introuced', "! ");
 };
 
 exports.default = _default;
