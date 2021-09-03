@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
-const Input = props => {
-    const [name, setName] = useState('');
+const Input = (props) => {
+  const [name, setName] = useState('');
 
   return (
     <>

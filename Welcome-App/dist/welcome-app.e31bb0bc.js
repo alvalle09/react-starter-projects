@@ -31870,6 +31870,7 @@ var _react = _interopRequireDefault(require("react"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+// object destructuring 
 var _default = function _default(_ref) {
   var title = _ref.title;
   return /*#__PURE__*/_react.default.createElement("h1", null, title);
@@ -31890,10 +31891,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var _default = function _default(_ref) {
   var _ref$name = _ref.name,
-      name = _ref$name === void 0 ? "we have not been intorduced!" : _ref$name;
-
-  /*#__PURE__*/
-  _react.default.createElement("p", null, "Hi there, ", name, " ");
+      name = _ref$name === void 0 ? 'we have not been intorduced' : _ref$name;
+  return /*#__PURE__*/_react.default.createElement("p", null, "Hi there, ", name, "! ");
 };
 
 exports.default = _default;
@@ -32092,6 +32091,8 @@ var App = /*#__PURE__*/function (_Component) {
     value: function render() {
       return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_Title.default, {
         title: "Welcom to the app!"
+      }), /*#__PURE__*/_react.default.createElement(_Greeting.default, {
+        name: this.state.displayName
       }), /*#__PURE__*/_react.default.createElement("p", null, "Enter your name below so we can get acquainted."), /*#__PURE__*/_react.default.createElement(_Input.default, {
         handleClick: this.handleClick
       }));
@@ -32143,7 +32144,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57103" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62139" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -25,7 +25,7 @@ class App extends Component {
     return (        
       <>
         <Title title="Welcom to the app!"/>
-        {/* <Greeting name={this.state.displayName} /> */}
+        <Greeting name={this.state.displayName}/>
         <p>Enter your name below so we can get acquainted.</p>
         <Input handleClick={this.handleClick}></Input>
       </>

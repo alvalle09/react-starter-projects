@@ -1,5 +1,6 @@
 import React from 'react'
 
-export default ({ title}) => <h1>{title}</h1>;
+// object destructuring 
+export default ({ title }) => <h1>{title}</h1>;
     
 
