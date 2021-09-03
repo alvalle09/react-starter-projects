@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 
-export default ({ name = "we haven't been intorduced!" }) => {
+export default ({ name = "we have not been intorduced!" }) => {
     <p>Hi there, { name } </p>
 }
 
