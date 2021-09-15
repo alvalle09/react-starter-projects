@@ -1,0 +1,31 @@
+
+body {
+    font-size: 16px;
+    line-height: 1.4;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 5em;
+}
+
+p {
+    margin-bottom: 1.6em;
+}
+
+input {
+    padding: 0.5em 1em;
+    line-height: 1;
+    font-size: 18px;
+    border: 1px solid thistle;
+}
+
+button {
+    border: 1px solid steelblue;
+    background: thistle;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button:hover {
+    background: yellowgreen;
+}
+
