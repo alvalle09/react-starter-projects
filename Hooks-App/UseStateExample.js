@@ -15,19 +15,22 @@ const  UseStateExample= () => {
         };
 
         setFormValues(updateFormValues);
-
     }
 
     const handleSubmit = e => {
+        // prevents full page reload
         e.preventDefault();
         setShowMessage(true);
     }
 
-
     return (
-        <div>
-            
-        </div>
+        // React fragment
+        <>
+            <p>Complete the form below and see a nice message about yourself!</p>
+            <form onSubmit="(handleSubmit)">
+
+            </form>
+        </>
     )
 }
 
