@@ -1,6 +1,6 @@
-import React from 'react'
+import React, {useState} from 'react'
 
-const  UseStateExample= () => {
+const  UseStateExample = () => {
     const [showMessage, setShowMessage] = useState(false);
     const [formValues, setFormValues] = useState( {
         name: '',
@@ -24,12 +24,40 @@ const  UseStateExample= () => {
     }
 
     return (
-        // React fragment
         <>
             <p>Complete the form below and see a nice message about yourself!</p>
-            <form onSubmit="(handleSubmit)">
+            <form onSubmit={handleSubmit}>
+                <label htmlFor='name'>What is your name?</label>
+                <input id='name' value={formValues['name']} onChange={handleChange} />
 
+                <label htmlFor='age'>How old are you?</label>
+                <input id='age' value={formValues['age']} onChange={handleChange} />
+
+                <label htmlFor='fruit'>What's your favorite fruit?</label>
+                <select id='fruit' value={formValues['frtuit']} onChange={handleChange}>
+                    <option>Bananas</option>
+                    <option>Apples</option>
+                    <option>Oranges</option>
+                    <option>Strawberries</option>
+                    <option>Pears</option>
+                    <option>Dragon Fruit</option>
+                    <option>Jack Fruit</option>
+                </select>
+
+                <button>Submit</button>
             </form>
+            {showMessage && (
+                <div className='form-message'>
+                    <p>
+                    Hi <strong>{formValues['name']}!</strong>, pleasure to meet you!!
+                    I can't believe you're only <strong>{formValues['age']}</strong> years old.
+                    </p>
+                    <p>
+                        My favorite fruit is also <strong>{formValues['fruit']}</strong>!!!
+                    </p>                    
+                </div>
+            )}
+
         </>
     )
 }

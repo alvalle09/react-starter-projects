@@ -21,8 +21,7 @@ export default props =>  {
 
         <div className="container">
             {
-                example === 'UseStateExample' ? (y
-                
+                example === 'UseStateExample' ? (
                     <UseStateExample />
                  ) : (
                     <UseEffectExample />
