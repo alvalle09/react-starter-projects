@@ -29,10 +29,10 @@ const  UseStateExample = () => {
             <form onSubmit={handleSubmit}>
                 <label htmlFor='name'>What is your name?</label>
                 <input id='name' value={formValues['name']} onChange={handleChange} />
-
+                <br/>
                 <label htmlFor='age'>How old are you?</label>
                 <input id='age' value={formValues['age']} onChange={handleChange} />
-
+                <br/>
                 <label htmlFor='fruit'>What's your favorite fruit?</label>
                 <select id='fruit' value={formValues['frtuit']} onChange={handleChange}>
                     <option>Bananas</option>
